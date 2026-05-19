@@ -64,15 +64,15 @@ export function Pricing() {
                 <div className="absolute inset-x-0 -top-px h-px animate-shimmer group-hover:bg-white/50" />
               )}
               
-              <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
-                <div className="text-xs tracking-[0.4em] uppercase text-gold/80 transition-colors duration-500 group-hover:text-white/80">
-                  {p.duration}
-                </div>
+              <div className="flex flex-col gap-4 mb-6">
                 {p.featured && (
-                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-gold text-primary-foreground text-[10px] tracking-[0.25em] uppercase font-medium transition-all duration-500 group-hover:bg-transparent group-hover:text-white group-hover:border group-hover:border-white/50 shadow-sm whitespace-nowrap">
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-gold text-primary-foreground text-[10px] tracking-[0.25em] uppercase font-medium transition-all duration-500 group-hover:bg-transparent group-hover:text-white group-hover:border group-hover:border-white/50 shadow-sm self-start">
                     <Crown className="h-3 w-3" /> Najtraženiji
                   </div>
                 )}
+                <div className="text-xs tracking-[0.4em] uppercase text-gold/80 transition-colors duration-500 group-hover:text-white/80">
+                  {p.duration}
+                </div>
               </div>
 
               <h3 className="font-display text-3xl text-champagne mb-3 tracking-wide transition-colors duration-500 group-hover:text-white">{p.name}</h3>
