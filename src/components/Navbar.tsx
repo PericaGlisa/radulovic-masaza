@@ -40,11 +40,11 @@ export function Navbar() {
         }`}
       >
         <nav className="container mx-auto flex items-center justify-between px-6">
-          <a href="#" className="flex items-center gap-2 md:gap-3" onClick={() => setOpen(false)}>
-            <img src={logo} alt="Slobodan Radulović" className="h-10 w-10 md:h-12 md:w-12 rounded-full shadow-glow" />
+          <a href="#" className="flex items-center gap-2.5 md:gap-3" onClick={() => setOpen(false)}>
+            <img src={logo} alt="Slobodan Radulović" className="h-11 w-11 md:h-12 md:w-12 rounded-full shadow-glow" />
             <div className="block">
-              <div className="font-display text-[12px] md:text-sm tracking-[0.2em] md:tracking-[0.25em] text-gradient-gold">SLOBODAN</div>
-              <div className="font-display text-[9px] md:text-xs tracking-[0.25em] md:tracking-[0.3em] text-champagne/80">RADULOVIĆ</div>
+              <div className="font-display text-[13px] md:text-sm tracking-[0.2em] md:tracking-[0.25em] text-gradient-gold">SLOBODAN</div>
+              <div className="font-display text-[10px] md:text-xs tracking-[0.25em] md:tracking-[0.3em] text-champagne/80">RADULOVIĆ</div>
             </div>
           </a>
 

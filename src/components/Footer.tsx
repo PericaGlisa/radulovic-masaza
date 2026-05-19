@@ -73,11 +73,11 @@ export function Footer() {
         </div>
 
         <div className="gold-divider mb-6" />
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs tracking-widest uppercase text-champagne/50">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+          <p className="text-xs tracking-[0.3em] uppercase text-gold/70 order-1 md:order-2">Premium Wellness Studio</p>
+          <p className="text-xs tracking-widest uppercase text-champagne/50 order-2 md:order-1">
             © {new Date().getFullYear()} Slobodan Radulović. Sva prava zadržana.
           </p>
-          <p className="text-xs tracking-[0.3em] uppercase text-gold/70">Premium Wellness Studio</p>
         </div>
       </div>
     </footer>
