@@ -63,7 +63,7 @@ export function Hero() {
           className="group inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass-gold mb-6 cursor-default transition-all duration-500 hover:bg-gradient-gold hover:shadow-glow"
         >
           <Sparkles className="h-3.5 w-3.5 text-gold transition-colors duration-500 group-hover:text-white" />
-          <span className="text-xs tracking-[0.3em] uppercase text-gold transition-colors duration-500 group-hover:text-white font-semibold">Premium Wellness Studio</span>
+          <span className="text-xs tracking-[0.3em] uppercase text-gold transition-colors duration-500 group-hover:text-white font-semibold">Premium Wellness na Vašoj Adresi</span>
         </motion.div>
 
         <motion.h1
@@ -72,8 +72,8 @@ export function Hero() {
           transition={{ delay: 0.6, duration: 1.2 }}
           className="font-display text-4xl md:text-6xl lg:text-7xl text-champagne leading-[1.1] mb-6"
         >
-          Povratite ravnotežu <br />
-          <span className="text-gradient-gold font-serif italic">tela i uma</span>
+          Osetite Mir u <br />
+          <span className="text-gradient-gold font-serif italic">Sopstvenom Domu</span>
         </motion.h1>
 
         <motion.p
@@ -82,8 +82,8 @@ export function Hero() {
           transition={{ delay: 0.9, duration: 1 }}
           className="font-serif text-lg md:text-xl text-champagne/80 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Profesionalne manuelne terapije, masaže i premium wellness tretmani —
-          iskustvo koje smiruje, leči i obnavlja.
+          Profesionalni wellness tretmani i masaže prilagođeni Vama, bez potrebe za putovanjem. 
+          Donosimo zen atmosferu direktno na Vaša vrata.
         </motion.p>
 
         <motion.div

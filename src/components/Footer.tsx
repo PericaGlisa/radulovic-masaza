@@ -23,13 +23,17 @@ export function Footer() {
               </div>
             </a>
             <p className="font-serif text-sm text-champagne/60 leading-relaxed text-center sm:text-left">
-              Premium wellness studio za one koji traže više od obične masaže.
+              Profesionalni wellness tretmani i masaže na Vašoj adresi. Uživajte u luksuzu bez napuštanja doma.
             </p>
           </div>
 
           <div className="text-center sm:text-left">
-            <h4 className="font-display text-sm tracking-[0.3em] uppercase text-gold mb-5">Kontakt</h4>
+            <h4 className="font-display text-sm tracking-[0.3em] uppercase text-gold mb-5">Lokacija</h4>
             <ul className="space-y-3 text-sm font-serif text-champagne/75 inline-block sm:block text-left">
+              <li className="flex items-start gap-3">
+                <MapPin className="h-4 w-4 text-gold mt-0.5 shrink-0" />
+                <span>Obrenovac, Beograd i okolina</span>
+              </li>
               <li className="flex items-start gap-3">
                 <Phone className="h-4 w-4 text-gold mt-0.5 shrink-0" />
                 <a href="tel:+38166100586" className="hover:text-gold transition-colors">+381 66 100 586</a>
@@ -38,15 +42,11 @@ export function Footer() {
                 <Mail className="h-4 w-4 text-gold mt-0.5 shrink-0" />
                 <a href="mailto:kontakt@slobodanradulovic.rs" className="hover:text-gold transition-colors">kontakt@slobodanradulovic.rs</a>
               </li>
-              <li className="flex items-start gap-3">
-                <MapPin className="h-4 w-4 text-gold mt-0.5 shrink-0" />
-                <span>Đačkog bataljona 4, 11500 Obrenovac</span>
-              </li>
             </ul>
           </div>
 
           <div className="text-center sm:text-left">
-            <h4 className="font-display text-sm tracking-[0.3em] uppercase text-gold mb-5">Radno Vreme</h4>
+            <h4 className="font-display text-sm tracking-[0.3em] uppercase text-gold mb-5">Termini</h4>
             <ul className="space-y-3 text-sm font-serif text-champagne/75 inline-block sm:block text-left">
               <li className="flex items-start gap-3"><Clock className="h-4 w-4 text-gold mt-0.5 shrink-0" /> Pon — Pet: 09:00 — 21:00</li>
               <li className="flex items-start gap-3"><Clock className="h-4 w-4 text-gold mt-0.5 shrink-0" /> Subota: 10:00 — 18:00</li>

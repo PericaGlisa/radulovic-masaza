@@ -1,36 +1,21 @@
 import { motion } from "framer-motion";
-import { Hand, Leaf, Activity, Brain, Flower2, Sparkles, ArrowUpRight } from "lucide-react";
+import { Hand, Leaf, Activity, Brain, Flower2, Sparkles, ArrowUpRight, Home, Moon } from "lucide-react";
 
 const services = [
   {
-    icon: Hand,
-    title: "Manuelna Terapija",
-    desc: "Stručna terapija usmerena na otklanjanje napetosti, blokada i bolova u mišićima i zglobovima.",
+    title: "Masaža u Vašem Domu",
+    desc: "Uštedite vreme i izbegnite saobraćaj. Donosimo kompletnu wellness opremu i zen atmosferu na Vašu adresu.",
+    icon: Home,
   },
   {
-    icon: Leaf,
-    title: "Relax Masaža",
-    desc: "Duboko opuštajuća masaža celog tela koja vraća harmoniju, smiruje um i obnavlja energiju.",
-  },
-  {
-    icon: Activity,
-    title: "Sportska Masaža",
-    desc: "Intenzivan tretman za sportiste — ubrzava oporavak, povećava performans i sprečava povrede.",
-  },
-  {
-    icon: Brain,
-    title: "Antistres Tretman",
-    desc: "Holistički pristup koji oslobađa od nakupljenog stresa, vraćajući mentalnu i fizičku jasnoću.",
-  },
-  {
-    icon: Flower2,
-    title: "Aromaterapija",
-    desc: "Tretman sa eteričnim uljima koji budi čula i otvara prostor za potpuno opuštanje.",
-  },
-  {
+    title: "Individualni Tretman",
+    desc: "Svaki tretman prilagođavamo Vašem stanju i potrebama, uz korišćenje premium ulja i profesionalnih tehnika.",
     icon: Sparkles,
-    title: "Wellness Rituali",
-    desc: "Ekskluzivni autorski rituali koji kombinuju masažu, kamenje i aromu — premium iskustvo.",
+  },
+  {
+    title: "Potpuna Relaksacija",
+    desc: "Nakon masaže ne morate nigde da putujete. Ostanite u miru svog doma i produžite efekat opuštanja.",
+    icon: Moon,
   },
 ];
 

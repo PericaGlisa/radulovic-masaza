@@ -14,22 +14,28 @@ export function About() {
             className="lg:col-span-3 order-2 lg:order-1"
           >
             <span className="text-xs tracking-[0.4em] uppercase text-gold">— O Meni —</span>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-champagne mt-4 mb-3 leading-[1.1]">
-              Slobodan
+            <h2 className="font-display text-4xl md:text-5xl text-champagne mb-8 leading-tight">
+              Vaš Dom Postaje <br />
+              <span className="text-gradient-gold italic">Oaza Mira</span>
             </h2>
-            <h2 className="font-serif italic text-4xl md:text-5xl lg:text-6xl text-gradient-gold mb-8">
-              Radulović
-            </h2>
-            <div className="gold-divider w-32 mb-8" />
-            <p className="font-serif text-lg text-champagne/80 leading-relaxed mb-6">
-              Više od jedne decenije posvećenosti telu, pokretu i tišini. Sertifikovani
-              manuelni terapeut i maser, sa kontinuiranom edukacijom iz oblasti kineziterapije,
-              sportske masaže i holističkih wellness rituala.
-            </p>
-            <p className="font-serif text-lg text-champagne/80 leading-relaxed mb-10">
-              Svaki klijent dobija individualni pristup — od prvog razgovora do poslednjeg
-              dodira. Verujem da je istinski tretman umetnost prisustva, a ne tehnike.
-            </p>
+
+            <div className="space-y-6 font-serif text-lg text-champagne/80 leading-relaxed mb-10">
+              <p>
+                Zovem se Slobodan Radulović i moj cilj je da Vam pružim vrhunsko wellness
+                iskustvo bez stresa koji donosi putovanje do salona. Specijalizovan sam za
+                profesionalne masaže i manuelne terapije koje obavljam u toplini Vašeg doma.
+              </p>
+              <p>
+                Dolazim na Vašu adresu sa kompletnom opremom — od profesionalnog stola za masažu
+                do najkvalitetnijih prirodnih ulja i opuštajuće muzike. Sve što je potrebno je
+                malo prostora, a ja ću se pobrinuti za ostalo.
+              </p>
+              <p>
+                Bilo da Vam je potrebno olakšanje od hroničnog bola, oporavak nakon treninga
+                ili jednostavno sat vremena potpunog bega od stvarnosti, moje znanje i iskustvo
+                su Vam na raspolaganju.
+              </p>
+            </div>
             <div className="grid grid-cols-2 gap-6">
               {["Sertifikovani terapeut", "Individualni pristup", "Premium atmosfera", "Diskrecija"].map((b) => (
                 <div key={b} className="flex items-center gap-3">

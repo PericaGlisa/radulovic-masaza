@@ -15,16 +15,20 @@ const faqs = [
     a: "Manuelna terapija može biti intenzivna, ali nikada bolna. Svaki pokret se prilagođava vašem pragu osetljivosti — komfor i poverenje su osnova rada.",
   },
   {
-    q: "Šta da obučem i ponesem?",
-    a: "Ne morate ništa donositi. Studio obezbeđuje sve — peškire, ogrtač, papuče i kupatilo za osvežavanje pre i posle tretmana.",
+    q: "Šta je potrebno da pripremim pre Vašeg dolaska?",
+    a: "Sve što Vam je potrebno je čist peškir i mali prostor u domu gde možemo postaviti sto za masažu (oko 2x2 metra). Ja donosim profesionalni sto, ulja, muziku i sve ostalo što je neophodno za tretman.",
   },
   {
-    q: "Kako se priprema za tretman?",
-    a: "Izbegavajte teške obroke 2 sata pre tretmana i pijte dovoljno vode. Dođite 10 minuta ranije kako biste se opustili u recepciji.",
+    q: "Gde sve dolazite na adresu?",
+    a: "Primarno radim na teritoriji Obrenovca i okoline, ali po dogovoru dolazim i u druge delove Beograda. Slobodno me kontaktirajte za proveru lokacije.",
   },
   {
-    q: "Da li radite kućne posete?",
-    a: "Da, za stalne klijente i posebne pakete organizujem premium kućne tretmane na teritoriji Obrenovca i šireg Beograda, uz prethodnu najavu.",
+    q: "Da li je masaža kod kuće isto kvalitetna kao u salonu?",
+    a: "Apsolutno. Koristim isti profesionalni sto i premium opremu kao u najboljim wellness centrima. Prednost je što ste u svom poznatom okruženju, što dodatno doprinosi opuštanju.",
+  },
+  {
+    q: "Kako mogu zakazati termin i koliko unapred?",
+    a: "Termin možete zakazati putem telefona ili WhatsApp/Viber poruke. Preporučujem da zakažete bar 1-2 dana unapred, mada je ponekad moguće organizovati dolazak i istog dana.",
   },
 ];
 
