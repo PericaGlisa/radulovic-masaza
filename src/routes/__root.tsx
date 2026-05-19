@@ -4,11 +4,7 @@ import {
   Link,
   createRootRouteWithContext,
   useRouter,
-  HeadContent,
-  Scripts,
 } from "@tanstack/react-router";
-
-import appCss from "../styles.css?url";
 
 function NotFoundComponent() {
   return (
@@ -68,58 +64,10 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: () => ({
-    meta: [
-      { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Golden Aura Wellness | Holistički pristup zdravlju i lepoti" },
-      { name: "description", content: "Otkrijte harmoniju duha i tela u Golden Aura Wellness centru. Vrhunski tretmani, masaže i wellness iskustva prilagođena vama." },
-      { name: "author", content: "Golden Aura Wellness" },
-      { property: "og:title", content: "Golden Aura Wellness | Holistički pristup zdravlju i lepoti" },
-      { property: "og:description", content: "Otkrijte harmoniju duha i tela u Golden Aura Wellness centru. Vrhunski tretmani, masaže i wellness iskustva." },
-      { property: "og:type", content: "website" },
-      { property: "og:image", content: "/og-image.jpg" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Golden Aura Wellness" },
-      { name: "twitter:description", content: "Vrhunski wellness i spa centar za vašu potpunu regeneraciju." },
-      { name: "twitter:image", content: "/og-image.jpg" },
-    ],
-    links: [
-      {
-        rel: "stylesheet",
-        href: appCss,
-      },
-      {
-        rel: "icon",
-        type: "image/svg+xml",
-        href: "/favicon.svg",
-      },
-      {
-        rel: "apple-touch-icon",
-        sizes: "180x180",
-        href: "/apple-touch-icon.png",
-      },
-    ],
-  }),
-  shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
   errorComponent: ErrorComponent,
 });
-
-function RootShell({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="sr">
-      <head>
-        <HeadContent />
-      </head>
-      <body>
-        {children}
-        <Scripts />
-      </body>
-    </html>
-  );
-}
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();

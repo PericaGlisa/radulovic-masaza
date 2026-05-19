@@ -15,6 +15,7 @@ import { Booking } from "@/components/Booking";
 import { Footer } from "@/components/Footer";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { FloatingCTA } from "@/components/FloatingCTA";
+import { BackToTop } from "@/components/BackToTop";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -91,6 +92,7 @@ function Index() {
       <Booking />
       <Footer />
       <FloatingCTA />
+      <BackToTop />
     </main>
   );
 }
