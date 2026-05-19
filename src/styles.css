@@ -1,0 +1,261 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-display: "Cinzel", serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-emerald-deep: var(--emerald-deep);
+  --color-forest: var(--forest);
+  --color-champagne: var(--champagne);
+  --color-stone: var(--stone);
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* Luxury wellness palette */
+  --background: oklch(0.18 0.04 165);          /* Dark Forest #0B1F19-ish */
+  --foreground: oklch(0.96 0.02 80);           /* warm white */
+  --card: oklch(0.22 0.045 165);
+  --card-foreground: oklch(0.96 0.02 80);
+  --popover: oklch(0.22 0.045 165);
+  --popover-foreground: oklch(0.96 0.02 80);
+
+  --primary: oklch(0.78 0.13 85);              /* Luxury Gold #D4AF37 */
+  --primary-foreground: oklch(0.18 0.04 165);
+
+  --secondary: oklch(0.28 0.06 165);           /* Emerald Green */
+  --secondary-foreground: oklch(0.96 0.02 80);
+
+  --muted: oklch(0.25 0.04 165);
+  --muted-foreground: oklch(0.78 0.025 80);
+
+  --accent: oklch(0.88 0.09 85);               /* Champagne */
+  --accent-foreground: oklch(0.18 0.04 165);
+
+  --destructive: oklch(0.55 0.22 25);
+  --destructive-foreground: oklch(0.98 0 0);
+
+  --border: oklch(0.78 0.13 85 / 0.2);
+  --input: oklch(0.96 0.02 80 / 0.1);
+  --ring: oklch(0.78 0.13 85 / 0.5);
+
+  --gold: oklch(0.78 0.13 85);
+  --gold-soft: oklch(0.88 0.09 85);
+  --emerald-deep: oklch(0.28 0.06 165);
+  --forest: oklch(0.18 0.04 165);
+  --champagne: oklch(0.94 0.04 85);
+  --stone: oklch(0.4 0.01 80);
+
+  --gradient-hero: radial-gradient(ellipse at center, oklch(0.28 0.06 165) 0%, oklch(0.12 0.03 165) 70%);
+  --gradient-gold: linear-gradient(135deg, oklch(0.88 0.09 85) 0%, oklch(0.78 0.13 85) 50%, oklch(0.65 0.15 75) 100%);
+  --gradient-emerald: linear-gradient(180deg, oklch(0.22 0.045 165) 0%, oklch(0.14 0.03 165) 100%);
+
+  --shadow-gold: 0 10px 40px -10px oklch(0.78 0.13 85 / 0.4);
+  --shadow-luxury: 0 25px 60px -20px oklch(0 0 0 / 0.6);
+  --shadow-glow: 0 0 60px oklch(0.78 0.13 85 / 0.25);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    background-image:
+      radial-gradient(at 20% 10%, oklch(0.28 0.06 165 / 0.5) 0%, transparent 50%),
+      radial-gradient(at 80% 80%, oklch(0.78 0.13 85 / 0.08) 0%, transparent 50%);
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: 0.02em;
+  }
+}
+
+@layer utilities {
+  .font-display { font-family: var(--font-display); }
+  .font-serif { font-family: var(--font-serif); }
+
+  .text-gradient-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bg-gradient-gold { background: var(--gradient-gold); }
+  .bg-gradient-emerald { background: var(--gradient-emerald); }
+  .bg-gradient-hero { background: var(--gradient-hero); }
+
+  .shadow-gold { box-shadow: var(--shadow-gold); }
+  .shadow-luxury { box-shadow: var(--shadow-luxury); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+
+  .glass {
+    background: oklch(0.96 0.02 80 / 0.04);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid oklch(0.78 0.13 85 / 0.18);
+  }
+
+  .glass-gold {
+    background: linear-gradient(135deg, oklch(0.78 0.13 85 / 0.12), oklch(0.78 0.13 85 / 0.04));
+    backdrop-filter: blur(16px);
+    border: 1px solid oklch(0.78 0.13 85 / 0.3);
+  }
+
+  .gold-border {
+    border: 1px solid oklch(0.78 0.13 85 / 0.4);
+  }
+
+  .gold-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, oklch(0.78 0.13 85 / 0.6), transparent);
+  }
+
+  .hover-lift {
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s ease;
+  }
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-gold);
+  }
+
+  /* Fix for invisible button text on hover and enhanced button states */
+  .glass-gold {
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .glass-gold:hover {
+    background: var(--gradient-gold);
+    color: var(--color-background) !important;
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-2px);
+  }
+
+  /* Responsive typography and spacing refinements */
+  @media (max-width: 640px) {
+    .container {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+    
+    section {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+    
+    h1 { font-size: 2.5rem !important; }
+    h2 { font-size: 2rem !important; }
+  }
+
+  /* Ensure all interactive gold elements have high contrast on hover */
+  a.text-gold:hover, button.text-gold:hover {
+    filter: brightness(1.2);
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0) translateX(0); opacity: 0.3; }
+    50% { transform: translateY(-30px) translateX(10px); opacity: 0.8; }
+  }
+  .animate-float { animation: float 8s ease-in-out infinite; }
+
+  @keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+  .animate-shimmer {
+    background: linear-gradient(90deg, transparent, oklch(0.88 0.09 85 / 0.6), transparent);
+    background-size: 200% auto;
+    animation: shimmer 3s linear infinite;
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% { box-shadow: 0 0 30px oklch(0.78 0.13 85 / 0.3); }
+    50% { box-shadow: 0 0 60px oklch(0.78 0.13 85 / 0.6); }
+  }
+  .animate-glow { animation: glow-pulse 4s ease-in-out infinite; }
+
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-up { animation: fade-up 1s cubic-bezier(0.16, 1, 0.3, 1) both; }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-33.333%); }
+  }
+  .animate-marquee { animation: marquee 40s linear infinite; }
+
+  /* Subtle film grain overlay for premium texture */
+  .noise-overlay::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.04;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  }
+
+  /* White calendar/date picker icon to match dark luxury theme */
+  input[type="date"]::-webkit-calendar-picker-indicator,
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(1) brightness(2);
+    cursor: pointer;
+    opacity: 0.85;
+  }
+  input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1;
+  }
+
+  @keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  .animate-spin-slow { animation: spin-slow 24s linear infinite; }
+}
