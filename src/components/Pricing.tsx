@@ -61,14 +61,20 @@ export function Pricing() {
               }`}
             >
               {p.featured && (
-                <>
-                  <div className="absolute inset-x-0 -top-px h-px animate-shimmer group-hover:bg-white/50" />
-                  <div className="absolute top-6 right-6 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-gold text-primary-foreground text-[10px] tracking-[0.25em] uppercase font-medium transition-all duration-500 group-hover:bg-transparent group-hover:text-white group-hover:border group-hover:border-white/50 shadow-sm">
+                <div className="absolute inset-x-0 -top-px h-px animate-shimmer group-hover:bg-white/50" />
+              )}
+              
+              <div className="flex flex-wrap items-center justify-between gap-4 mb-4">
+                <div className="text-xs tracking-[0.4em] uppercase text-gold/80 transition-colors duration-500 group-hover:text-white/80">
+                  {p.duration}
+                </div>
+                {p.featured && (
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-gradient-gold text-primary-foreground text-[10px] tracking-[0.25em] uppercase font-medium transition-all duration-500 group-hover:bg-transparent group-hover:text-white group-hover:border group-hover:border-white/50 shadow-sm whitespace-nowrap">
                     <Crown className="h-3 w-3" /> Najtraženiji
                   </div>
-                </>
-              )}
-              <div className="text-xs tracking-[0.4em] uppercase text-gold/80 mb-2 transition-colors duration-500 group-hover:text-white/80">{p.duration}</div>
+                )}
+              </div>
+
               <h3 className="font-display text-3xl text-champagne mb-3 tracking-wide transition-colors duration-500 group-hover:text-white">{p.name}</h3>
               <p className="font-serif text-base text-champagne/70 leading-relaxed mb-8 min-h-[3rem] transition-colors duration-500 group-hover:text-white/90">{p.desc}</p>
 
