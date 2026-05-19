@@ -8,13 +8,20 @@ export function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="sm:col-span-2 lg:col-span-1">
-            <div className="flex items-center gap-3 mb-5 justify-center sm:justify-start">
-              <img src={logo} alt="Logo" className="h-14 w-14 rounded-full shadow-glow" />
+            <a 
+              href="#" 
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }}
+              className="flex items-center gap-3 mb-5 justify-center sm:justify-start group"
+            >
+              <img src={logo} alt="Logo" className="h-14 w-14 rounded-full shadow-glow transition-transform duration-500 group-hover:scale-110" />
               <div>
                 <div className="font-display text-sm tracking-[0.25em] text-gradient-gold">SLOBODAN</div>
                 <div className="font-display text-xs tracking-[0.3em] text-champagne/80">RADULOVIĆ</div>
               </div>
-            </div>
+            </a>
             <p className="font-serif text-sm text-champagne/60 leading-relaxed text-center sm:text-left">
               Premium wellness studio za one koji traže više od obične masaže.
             </p>
