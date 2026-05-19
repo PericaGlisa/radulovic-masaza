@@ -4,12 +4,12 @@ import { useState, type FormEvent } from "react";
 import { Particles } from "./Particles";
 
 const treatments = [
+  "Classic Zen (Relax & Terapeutska)",
+  "Golden Aura Wellness Ritual",
+  "Power Recovery (Sportska Masaža)",
   "Manuelna Terapija",
-  "Relax Masaža",
-  "Sportska Masaža",
   "Antistres Tretman",
   "Aromaterapija",
-  "Wellness Ritual",
 ];
 
 export function Booking() {
