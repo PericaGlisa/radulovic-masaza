@@ -3,19 +3,19 @@ import { Hand, Leaf, Activity, Brain, Flower2, Sparkles, ArrowUpRight, Home, Moo
 
 const services = [
   {
-    title: "Masaža u Vašem Domu",
-    desc: "Uštedite vreme i izbegnite saobraćaj. Donosimo kompletnu wellness opremu i zen atmosferu na Vašu adresu.",
-    icon: Home,
+    title: "Classic Zen",
+    desc: "Savršen spoj relaksacije i terapeutske masaže. Idealno za oslobađanje od svakodnevnog stresa i napetosti mišića.",
+    icon: Leaf,
   },
   {
-    title: "Individualni Tretman",
-    desc: "Svaki tretman prilagođavamo Vašem stanju i potrebama, uz korišćenje premium ulja i profesionalnih tehnika.",
+    title: "Golden Aura",
+    desc: "Naš potpisni ritual koji obnavlja energiju i pruža dubinski mir. Uključuje tretman celog tela uz premium ulja.",
     icon: Sparkles,
   },
   {
-    title: "Potpuna Relaksacija",
-    desc: "Nakon masaže ne morate nigde da putujete. Ostanite u miru svog doma i produžite efekat opuštanja.",
-    icon: Moon,
+    title: "Power Recovery",
+    desc: "Intenzivna sportska masaža fokusirana na duboka tkiva i oporavak mišića nakon fizičkog napora.",
+    icon: Activity,
   },
 ];
 
