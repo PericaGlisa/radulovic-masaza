@@ -23,7 +23,7 @@ export function FloatingCTA() {
       <span className="absolute inset-0 rounded-full animate-glow opacity-60" />
       <MessageCircle className="relative h-5 w-5" />
       <span className="relative text-xs tracking-[0.25em] uppercase font-medium hidden sm:inline">
-        Pišite nam
+        Pišite mi
       </span>
     </a>
   );
