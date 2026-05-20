@@ -9,10 +9,10 @@ import g6 from "@/assets/experience.jpg";
 const items = [
   { src: g1, alt: "Bele orhideje" },
   { src: g2, alt: "Zen kamenje" },
-  { src: g3, alt: "Sveće u spa enterijeru" },
+  { src: g3, alt: "Sveće i opuštajući detalji" },
   { src: g4, alt: "Masažno ulje" },
   { src: g5, alt: "Aromaterapijska ulja" },
-  { src: g6, alt: "Luksuzni spa enterijer" },
+  { src: g6, alt: "Luksuzni wellness ambijent" },
 ];
 
 export function Gallery() {

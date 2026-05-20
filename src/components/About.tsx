@@ -57,7 +57,7 @@ export function About() {
             <div className="relative rounded-3xl overflow-hidden shadow-luxury gold-border">
               <img
                 src={aboutImg}
-                alt="Premium wellness atmosfera — zen detalji studija"
+                alt="Premium wellness atmosfera — profesionalna oprema za Vaš dom"
                 loading="lazy"
                 width={1024}
                 height={1280}

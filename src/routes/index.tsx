@@ -30,7 +30,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Luksuzni manuelni tretmani, masaže i wellness rituali. Povratite ravnotežu tela i uma u srcu Obrenovca.",
+          "Profesionalni manuelni tretmani i masaže na Vašoj adresi. Povratite ravnotežu tela i uma u udobnosti sopstvenog doma u Obrenovcu i Beogradu.",
       },
       { property: "og:type", content: "website" },
       { property: "og:image", content: "/og-image.jpg" },
@@ -52,13 +52,22 @@ export const Route = createFileRoute("/")({
           "@type": "HealthAndBeautyBusiness",
           name: "Golden Aura Wellness — Slobodan Radulović",
           description:
-            "Profesionalni manuelni terapeut i maser. Premium wellness tretmani u luksuznoj zen atmosferi.",
+            "Profesionalni manuelni terapeut i maser. Premium wellness tretmani na Vašoj adresi u Obrenovcu i Beogradu.",
           telephone: "+38166100586",
+          areaServed: [
+            {
+              "@type": "City",
+              name: "Obrenovac",
+            },
+            {
+              "@type": "City",
+              name: "Beograd",
+            },
+          ],
           address: {
             "@type": "PostalAddress",
-            streetAddress: "Đačkog bataljona 4",
             addressLocality: "Obrenovac",
-            postalCode: "11500",
+            addressRegion: "Beograd",
             addressCountry: "RS",
           },
           sameAs: [

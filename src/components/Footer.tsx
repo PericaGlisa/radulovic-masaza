@@ -28,7 +28,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-display text-sm tracking-[0.3em] uppercase text-gold mb-5">Lokacija</h4>
+            <h4 className="font-display text-sm tracking-[0.3em] uppercase text-gold mb-5">Gde dolazimo</h4>
             <ul className="space-y-3 text-sm font-serif text-champagne/75">
               <li className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 text-gold mt-0.5 shrink-0" />

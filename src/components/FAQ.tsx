@@ -23,8 +23,8 @@ const faqs = [
     a: "Primarno radim na teritoriji Obrenovca i okoline, ali po dogovoru dolazim i u druge delove Beograda. Slobodno me kontaktirajte za proveru lokacije.",
   },
   {
-    q: "Da li je masaža kod kuće isto kvalitetna kao u salonu?",
-    a: "Apsolutno. Koristim isti profesionalni sto i premium opremu kao u najboljim wellness centrima. Prednost je što ste u svom poznatom okruženju, što dodatno doprinosi opuštanju.",
+    q: "Da li je masaža kod kuće jednako kvalitetna kao u wellness centrima?",
+    a: "Apsolutno. Koristim isti profesionalni sto i premium opremu kao u najboljim spa centrima. Prednost je što ste u svom poznatom okruženju, što dodatno doprinosi opuštanju.",
   },
   {
     q: "Kako mogu zakazati termin i koliko unapred?",

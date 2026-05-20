@@ -45,8 +45,8 @@ export function Experience() {
               telo pamti šta znači biti potpuno prisutno.
             </p>
             <p className="font-serif text-lg text-champagne/80 leading-relaxed mb-10">
-              Cilj nije samo opuštanje — cilj je transformacija. Da odete drugačiji
-              nego što ste došli.
+              Cilj nije samo opuštanje — cilj je transformacija. Da se osećate potpuno drugačije 
+              nakon našeg susreta.
             </p>
 
             <div className="group relative">

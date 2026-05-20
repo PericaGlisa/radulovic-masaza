@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
 const steps = [
-  { n: "01", t: "Razgovor", d: "Diskretan prijem i kratak razgovor — slušamo vaše telo, vaše ciljeve i potrebe." },
-  { n: "02", t: "Ritual Pripreme", d: "Topli peškir, ulja, miris i muzika — čula se otvaraju, dah usporava." },
+  { n: "01", t: "Dolazak", d: "Dolazak na Vašu adresu i kratak razgovor — slušamo Vaše telo, Vaše ciljeve i potrebe." },
+  { n: "02", t: "Ritual Pripreme", d: "Priprema prostora, ulja i muzike — Vaš dom postaje oaza mira dok se čula otvaraju." },
   { n: "03", t: "Tretman", d: "Stručna manuelna terapija prilagođena vama — svaki pokret ima nameru." },
   { n: "04", t: "Tišina", d: "Trenutak posle tretmana, sa čajem i tišinom, da telo zapamti novo stanje." },
   { n: "05", t: "Preporuke", d: "Personalizovane preporuke za nastavak — vežbe, ritmovi i mali rituali kod kuće." },
